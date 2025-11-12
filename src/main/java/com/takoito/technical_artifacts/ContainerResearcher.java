@@ -60,6 +60,12 @@ public class ContainerResearcher extends AbstractContainerMenu {
     }
 
     @Override
+    public void removed(Player p_38940_) {
+        super.removed(p_38940_);
+        this.clearContainer(p_38940_,this.container);
+    }
+
+    @Override
     public boolean stillValid(@NotNull Player p_38874_) {
         return true;
     }

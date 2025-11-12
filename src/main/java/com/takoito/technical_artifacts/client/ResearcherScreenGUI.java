@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class ResearcherScreenGUI extends AbstractContainerScreen<ContainerResearcher> {
 
+    @SuppressWarnings("removal")
     private static final ResourceLocation TEXTURE = new ResourceLocation("technical_artifacts","textures/gui/researcher.png");
 
     public ResearcherScreenGUI(ContainerResearcher p_97741_, Inventory p_97742_, Component p_97743_) {
