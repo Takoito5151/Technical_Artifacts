@@ -94,6 +94,7 @@ public class ModTechnicalArtifacts
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
+        MENUTYPES.register(modEventBus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -143,11 +144,11 @@ public class ModTechnicalArtifacts
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
-
-        }
-
-        static {
             MenuScreens.register(RESEARCHING.get(), ResearcherScreenGUI::new);
+
+
         }
+
+
     }
 }
