@@ -5,11 +5,9 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 //import static com.takoito.technical_artifacts.MenuRegister.RESEARCHING;
 import static com.takoito.technical_artifacts.ModTechnicalArtifacts.RESEARCHING;
@@ -60,7 +58,7 @@ public class ContainerResearcher extends AbstractContainerMenu {
     }
 
     @Override
-    public void removed(Player p_38940_) {
+    public void removed(@NotNull Player p_38940_) {
         super.removed(p_38940_);
         this.clearContainer(p_38940_,this.container);
     }
